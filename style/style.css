@@ -33,16 +33,15 @@ body{
 
 /*réglage de la partie Nav*/
 #logoE2C{
-    width:200px ;
+    width:100px ;
     display: block;
 }
 
 
-
-
-
 /*réglage de la partie header*/
 header{
+position: relative;
+top: 10vmin;
 background:radial-gradient(circle at 50%, var(--couleur-midclaire),var(--couleur-fonce));
 color:var(--couleur-claire);
 height: 25vh;
@@ -58,7 +57,9 @@ align-items: center;
 h1{ 
     font-size: 6rem;
 }
-h2{ font-size: 3.5rem;
+h2{ 
+    margin-bottom: 5px;
+    font-size: 3.5rem;
 }
 h3{
     font-size: 2.5rem;
@@ -66,10 +67,15 @@ h3{
 
 
 nav {
+    position: fixed;
+    height: 10vmin;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid var(--couleur-claire)1px;
+    width: 100vw;
+    background-color: var(--couleur-fonce);
+    z-index: 10;
 }
 
 #nav-bar {
@@ -79,6 +85,7 @@ nav {
     justify-content: end;
     align-items: center;
     padding: 5px;
+    
 }
 
 
@@ -95,6 +102,8 @@ nav {
     margin: 5px;
     text-align: center;
     border-radius: 10px;
+    transition: backgroundcolor 500ms, color 1000ms, border 1000ms;
+
     
 }
 
@@ -115,8 +124,10 @@ border: solid var(--couleur-midfonce) 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: stretch;
     padding: 20px;
+    position: relative;
+    top: 10vmin;
 }
 
 
@@ -124,15 +135,55 @@ main {
     width: 75%;
 }
 
+p{
+
+font-size: 1.6rem;
+margin-bottom: 5px
+}
+
+
 article{
     box-shadow: var(--couleur-claire)2px 2px 5px 0;
     padding: 10px;
     margin-bottom: 10px;
+    transition: transform 1000ms;
 
 }
 
+article:hover{
+
+    transform:translate3d(2vh, 2vh, 0);
+
+}
+
+/*réglage article 1*/
+
+#texte1content{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#texte1{
+        width: 60%;
+        padding-left: 10px;
+}
+
+iframe{
+    display: block;
+    width: 40%;
+    border-radius: 10%;
+}
+
 aside {
+    position: fixed;
+    top: 25vmin;
     width: 20%;
+    right: 30px;
+
+
 }
 
 /* image et vidéo*/
@@ -143,12 +194,44 @@ max-width: 100%;
 
 #lecture{
 max-width: 100%;
+width: 20%;
+float: right;
+
 }
 
 #anciengrp{
 max-width: 100%;
+margin-top: 1px;
 }
 
 #festnum{
 max-width: 100%;
+}
+aside>article {
+    padding: 15px;
+    background-color: var(--couleur-fonce);
+    color: var(--couleur-claire);
+    border: solid var(--couleur-midfonce);
+}
+
+/*design insane*/
+
+.intertext {
+    width: 100%;
+    aspect-ratio: 1904/640;
+    background-image: url(../src/bib1.png);
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 15vh;
+}
+
+.intertext2 {
+    width: 100%;
+    aspect-ratio: 1904/640;
+    background-image: url(../src/bib2.png);
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: 15vh;
 }
