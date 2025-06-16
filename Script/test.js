@@ -24,11 +24,6 @@ alert('gg wp');
 
 
 
-
-
-
-
-
 /*
 let firstname = prompt('Quel est votre prénom ?');
 let lastname = prompt('Quel est votre Nom ?');
