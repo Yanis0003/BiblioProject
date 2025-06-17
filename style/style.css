@@ -235,3 +235,70 @@ aside>article {
     background-attachment: fixed;
     background-position-y: 15vh;
 }
+
+/*la page game,htm*/
+
+#main-game{
+    position: relative;
+    top: 10vmin;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    width: 100%;
+    padding: 25px;
+
+    font-size: 2rem;
+}
+
+#user-interface{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#user-number{
+font-size: 1.5rem;
+width: 15vw;
+padding: 5px;
+border-radius: 10px;
+background-color: var(--couleur-midclaire);
+}
+
+#user-number:focus{
+background-color: var(--couleur-claire);
+color: var(--couleur-midfonce);
+
+}
+
+#send-button{
+    display: block;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-left: 20px;
+
+    background-color: var(--couleur-midclaire);
+    border-radius: 10px;
+
+    box-shadow: var(--couleur-midfonce)3px 3px 5px 0px;
+    transition:box-shadow 250ms ;
+   
+}
+
+#send-button:hover{
+    background-color: var(--couleur-claire);
+    box-shadow: 0 0 0 0;
+}
+
+.result-line{
+    font-family: "police";
+    border: var(--couleur-claire) solid 2px;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    margin: 12px;
+
+}
