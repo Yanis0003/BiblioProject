@@ -123,7 +123,7 @@ border: solid var(--couleur-midfonce) 2px;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: stretch;
     padding: 20px;
     position: relative;
@@ -181,7 +181,8 @@ aside {
     position: fixed;
     top: 25vmin;
     width: 20%;
-    right: 30px;
+    right: -33%;
+    transition: right 800ms;
 
 
 }
@@ -300,5 +301,53 @@ color: var(--couleur-midfonce);
     border-radius: 5px;
     font-size: 1.8rem;
     margin: 12px;
+
+}
+
+/*reglage JS des news */
+
+#news-trigger{
+
+position: fixed;
+top: 38vh;
+right: 0;
+
+background-color: var(--couleur-midfonce);
+color: var(--couleur-claire);
+
+writing-mode: vertical-lr;
+text-orientation:mixed ;
+font-size: large;
+font-weight: 800;
+
+
+padding: 10px;
+border-top: var(--couleur-midfonce)solid 1px;
+border-left: var(--couleur-midfonce)solid 1px;
+border-bottom: var(--couleur-midfonce)solid 1px;
+
+border-radius: 10px 0 0 10px;
+
+z-index: 10;
+cursor: pointer;
+
+opacity: 1;
+transition: opacity 1000ms;
+
+}
+
+#close{
+    position: absolute;
+    right: 0;
+    top: -6vh;
+
+    padding: 15px;
+    background-color: var(--couleur-fonce);
+    color: var(--couleur-claire);
+    border: solid var(--couleur-midfonce);
+
+
+    font-weight: 900;
+    cursor: pointer;
 
 }
